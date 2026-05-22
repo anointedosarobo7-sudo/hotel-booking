@@ -1,0 +1,626 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Momo+Signature&family=Momo+Trust+Display&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+TAS:wght@100..400&display=swap');
+ 
+ 
+ body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+     max-width: 100%;
+     background: linear-gradient(rgba(0,0,0,0.8),
+    rgba(0,0,0,0.6)),
+    url(home.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  font-family: "Playfair Display", serif;
+  padding: 10px 40px;
+  margin: 0;
+top: 0;
+}
+
+ .navbar ul{
+    gap: 30px;
+    font-size: 15px;
+     display: flex;
+     flex-direction: row;
+     gap: 30px;
+}
+
+@media (max-width:768px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul{
+        flex-direction:column;
+        width: 100%;
+        gap: 35px;
+        margin-top: 10px;
+        display: none;
+        
+    }
+
+  .navbar ul.active{
+    display: flex;
+  }
+   
+
+    .book{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .book button{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+}
+
+
+ 
+
+nav h1{
+    color:rgba(200,169,106) ;
+     
+}
+
+
+
+nav .navbar li{
+  
+   text-decoration: none;
+      
+      list-style-type: none;
+     
+}
+
+nav .navbar a:hover{
+    border: 1px solid rgb(200, 169, 106);
+    border-radius: 10px;
+}
+
+nav .navbar a{
+    text-decoration: none;
+    color:rgba(255,255,255);
+    padding: 5px 10px;
+    transition: 0.3s ease;
+    border-radius: 10px;
+     border: 1px solid transparent;
+}
+
+nav .navbar i{
+    margin-right: 10px;
+}
+
+
+nav .book button{
+    height: 40px;
+    width: 130px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255,255,255);
+    border: 1px solid rgb(200, 169, 106);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav .book button:hover{
+    background-color:rgb(200, 169, 106) ;
+}
+
+
+nav .book i{
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+section{
+ justify-content:space-around ;
+ align-items: center;
+ text-align: center;
+ color: rgb(255,255,255);
+ padding: 50px;
+}
+
+section h2{
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+section p{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: -30px;
+}
+
+.search-box{
+    width: 60%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255,255,255);
+    border-radius: 10px;
+    padding: 20px, 1px;
+    gap: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,1);
+    height: 5px;
+     
+}
+
+@media (max-width:768px){
+    .search-box .booking{
+        height: 25px;
+        width: 50px;
+    }
+
+      
+}
+
+.search-box .booking{
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.search-box .booking label{
+    font-size: 14px;
+    color: rgb(107, 107, 107);
+}
+
+.search-box .booking input,
+.search-box .booking select{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: rgb(28,28,28);
+    text-transform: uppercase;
+    background: transparent;
+
+}
+
+.search-box .divider{
+    width: 1px;
+    height: 40px;
+     background: rgb(0,0,0);
+}
+
+.search-box i{
+  color: black;
+   
+}
+
+.search-box button{
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    background-color:rgb(117, 84, 17) ;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.search-box button:hover{
+    background-color: black;
+}
+
+.about-us-section{
+    width: 92.6%;
+    min-height: 80vh;
+     background:rgb(228, 223, 223);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+     
+
+
+    
+  
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+ 
+   
+}
+
+.about-us-section h3{
+color: rgb(117, 84, 17);
+font-size: 30px;
+}
+
+.about-us-section h1{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+
+.about-us-section p{
+    color: rgb(0,0,0);
+    padding: 20px;
+    font-size: 25px;
+}
+
+.about-us-section button{
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-weight: bold;
+}
+
+
+
+.about-us-section .flex{
+    display: flex;
+     justify-content: space-around;
+      margin-top: 50px;
+     flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.about-us-section .flex .flex-box{
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: linear-gradient(
+        250deg,
+        rgb(5,8,20,0.98) 50%,
+        rgb(5,8,20,0.98) 70%,
+        rgb(5,8,20,1) 100%
+         
+    );
+
+    border: 1px solid rgb(238, 164, 18);
+    z-index: 1000;
+}
+
+
+.our-room-section{
+    width: 92.6%;
+     height: 100vh;
+   margin-top: -140px;
+     background: linear-gradient(
+        250deg,
+        rgb(5,8,20,0.98) 50%,
+        rgb(5,8,20,0.98) 70%,
+        rgb(5,8,20,1) 100%
+    );
+    background-position: center;
+    background-repeat: no-repeat;
+   position: relative;
+
+}
+
+.flex .flex-box p{
+    text-align: left;
+    color: white;
+     font-size: 18px;
+     padding: 10px;
+     margin-top: 0.5px;
+}
+
+.flex .flex-box h4{
+   color:white ;
+    text-align: left;
+    padding: 10px;
+    margin-top: -30px;
+    font-size: 18px;
+    
+}
+
+.flex .flex-box button {
+    margin-top: -50px;
+    height: 30px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    color: white;
+    border: none;
+    background-color:rgb(163, 111, 8) ;
+    margin-right: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.flex .flex-box button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.flex .flex-box i{
+    float: right;
+    font-size: 12px;
+    color: rgb(255, 170, 0);
+}
+
+.our-room-section .our-room{
+    margin-top: 100px;
+}
+
+.our-room-section .our-room h1{
+    padding: 20px;
+     font-family: "Momo Trust Display", sans-serif;
+}
+
+
+
+
+
+.our-room-section .room-scrol{
+    display: flex;
+    overflow-x: auto;
+    margin-top:50px ;
+    height: 330px;
+    gap: 20px;
+    width: 100%;
+    scroll-behavior: smooth;
+    padding: 5px;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    cursor: grab;
+
+}
+
+.our-room-section .room-scrol:active{
+    cursor: grabbing;
+}
+
+.our-room-section .room-scrol .rooms{
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    width: 100%;
+    flex: 0 0 calc(25% - 20px);
+     border-radius: 10px;
+     height: 300px;
+     border: 2px solid white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    scroll-snap-align: start;
+    
+}
+
+ .our-room-section .room-scrol .rooms:hover{
+    perspective: 1000px;
+    transform: scale(1.03);
+    box-shadow: 0px 20px 40px rgb(0, 0, 0,0.5);
+   
+ }
+
+
+.our-room-section .room-scrol .rooms img{
+    object-fit: cover;
+    height: 230px;
+    
+}
+
+.our-room-section button{
+    position:absolute;
+    padding: 15px 25px;
+    top: 50%;
+    transform:translateY(-50%);
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.our-room-section button:disabled{
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.our-room-section .arrow-left:first-of-type{
+   left: 10px;
+}
+
+.our-room-section .arrow-right:first-of-type{
+    right: 30px;
+}
+
+.our-room-section .rooms p{
+    font-size: 15px;
+   text-align: left;
+    margin-left: 10px;
+   margin-top: 1px;
+}
+
+ .our-room-section .rooms i{
+   float: right;
+    font-size: 10px;
+ 
+ }
+
+  .our-room-section .rooms h4{
+    margin-top: -20px;
+    text-align: left;
+    margin-left: 10px;
+   padding: 5px;
+  }
+  
+.our-room-section .rooms button{
+    position: unset;
+    height: 20px;
+    width: 130px;
+    border-radius: 5px;
+    margin-top: -20px;
+    font-size: 13px;
+    font-weight: bold;
+    float: right;
+    margin-right: 10px;
+    padding: 0;    
+}
+
+ 
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(0,0,0);
+    border-top: 2px solid rgba(255, 255, 255,0.1 );
+    gap: 60px;
+    width: 100%;
+}
+
+.footer .grand-palace{
+    color: white;
+  
+}
+
+.footer .grand-palace h2{
+    color: rgba(200,169,106);
+}
+
+.footer .grand-palace .all{
+    display: flex;
+    gap: 10px;
+}
+
+.footer .grand-palace .all .terms{
+    color: rgb(180, 179, 179);
+}
+
+.footer .grand-palace .divider{
+    height: 20px;
+    width: 1px;
+    background-color:rgb(180, 179, 179);
+    margin-top: 15px;
+}
+
+.footer .grand-palace p{
+     margin: 8px;
+    text-transform: capitalize;
+}
+
+.footer .quick-link{
+ color: rgba(200,169,106); 
+   width: 200px;
+    
+}
+
+ .footer .quick-link ul{
+    padding: 0;
+    margin: 0;
+ }
+
+.footer .quick-link li{
+    list-style-type: none; 
+     margin-bottom: 8px;
+}
+
+.footer .quick-link a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.footer .quick-link a:hover{
+    color: rgba(200,169,106) ;
+    transition: 0.2s;
+}
+
+.footer .support{
+    color:rgba(200,169,106);
+     width: 200px;
+       
+}
+
+.footer .support ul{
+    padding: 0px;
+    margin: 0;
+}
+
+.footer .support li{
+    list-style-type: none;
+     margin-bottom: 8px;
+}
+
+.footer .support a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+      
+}
+
+.footer .support a:hover{
+    color: rgba(200,169,106) ;
+    transition: 0.2s;
+}
+
+.footer .follow-us{
+    color: white;
+}
+
+.footer .follow-us i{
+    color: rgba(200,169,106);
+    font-size: 25px;
+    padding: 10px;
+    background:rgba(255,255,255,0.1);
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+ .newsletter{
+    padding: 15px;
+    background: black; 
+    justify-content: center;
+    display: flex;
+  
+}
+
+ .newsletter label{
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+    padding: 10px;
+}
+
+ .newsletter input{
+   height: 29px;
+background-color: black;
+border: 2px solid rgba(200,169,106);
+color: white;
+outline: none;
+width: 200px;
+}
+
+ .newsletter button{
+    height: 35px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgba(200,169,106);
+    color: white;
+    border: none;
+   
+}

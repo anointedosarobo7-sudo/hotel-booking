@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Momo+Signature&family=Momo+Trust+Display&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+TAS:wght@100..400&display=swap');
+ 
+ 
+ body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+     max-width: 100%;
+     background: linear-gradient(rgba(0,0,0,0.8),
+    rgba(0,0,0,0.6)),
+    url(home.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  font-family: "Playfair Display", serif;
+  padding: 10px 40px;
+  margin: 0;
+top: 0;
+}
+
+ .navbar ul{
+    gap: 30px;
+    font-size: 15px;
+     display: flex;
+     flex-direction: row;
+     gap: 30px;
+}
+
+@media (max-width:768px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul{
+        flex-direction:column;
+        width: 100%;
+        gap: 35px;
+        margin-top: 10px;
+        display: none;
+        
+    }
+
+  .navbar ul.active{
+    display: flex;
+  }
+   
+
+    .book{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .book button{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+}
+
+
+ 
+
+nav h1{
+    color:rgba(200,169,106) ;
+     
+}
+
+
+
+nav .navbar li{
+  
+   text-decoration: none;
+      
+      list-style-type: none;
+     
+}
+
+nav .navbar a:hover{
+    border: 1px solid rgb(200, 169, 106);
+    border-radius: 10px;
+}
+
+nav .navbar a{
+    text-decoration: none;
+    color:rgba(255,255,255);
+    padding: 5px 10px;
+    transition: 0.3s ease;
+    border-radius: 10px;
+     border: 1px solid transparent;
+}
+
+nav .navbar i{
+    margin-right: 10px;
+}
+
+
+nav .book button{
+    height: 40px;
+    width: 130px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255,255,255);
+    border: 1px solid rgb(200, 169, 106);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav .book button:hover{
+    background-color:rgb(200, 169, 106) ;
+}
+
+
+nav .book i{
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+section{
+ justify-content:space-around ;
+ align-items: center;
+ text-align: center;
+ color: rgb(255,255,255);
+ padding: 50px;
+ 
+}
+
+section h2{
+    font-size: 80px;
+     
+    text-transform: capitalize;
+}
+
+section p{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-top: -30px;
+}
+
+.about-us-section{
+    max-width: 100%;
+    min-height: 100vh;
+     background:rgb(228, 223, 223);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;   
+    overflow: hidden;
+}
+
+.about-us-section h1{
+    color: black;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+
+.about-us-section p{
+    color: black;
+    font-weight: bold;
+}
+
+
+.search-box{
+    width: 60%;
+    display: flex;
+     float: right;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255,255,255);
+    border-radius: 10px;
+    padding: 20px, 1px;
+    gap: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,1);
+    height: 5px;
+     
+}
+
+@media (max-width:768px){
+    .search-box .booking{
+        height: 25px;
+        width: 50px;
+    }
+
+      
+}
+
+.search-box .booking{
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.search-box .booking label{
+    font-size: 14px;
+    color: rgb(107, 107, 107);
+}
+
+.search-box .booking input,
+.search-box .booking select{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: rgb(28,28,28);
+    text-transform: uppercase;
+    background: transparent;
+
+}
+
+.search-box .divider{
+    width: 1px;
+    height: 40px;
+     background: rgb(0,0,0);
+}
+
+.search-box i{
+  color: black;
+   
+}
+
+.search-box button{
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    background-color:rgb(117, 84, 17) ;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.search-box button:hover{
+    background-color: black;
+}
+
+.rooms-found{
+ border-radius: 20px;
+height: 800px;
+width: 60%;
+float: right;
+ background-color: rgb(218, 216, 216);
+margin-top: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+ overflow: hidden;
+ 
+flex-direction: column;
+gap: 30px;
+}
+
+.rooms-found .found{
+    margin-left: -285px;    
+}
+
+ 
+
+.rooms-found .rooomy{
+    height: 380px;
+    width: 400px;
+    border-radius: 10px;
+     background: linear-gradient(
+        250deg,
+        rgb(5,8,20,0.98) 50%,
+        rgb(5,8,20,0.98) 70%,
+        rgb(5,8,20,1) 100%
+    );
+    overflow: hidden;
+    font-size: 13px;
+    text-align: left;
+   margin-left: -25px;
+}
+.rooms-found #one{
+     
+ }
+
+ .rooms-found p{
+    padding: 0px;
+    margin: 0px;
+    margin-top: -50px;
+    text-align: left;
+    font-size: 20px;
+    margin-left: -50px;
+ }
+ 
+.rooms-found .rooomy img{
+    margin-top: -70px;
+}
+
+ 
+ .rooms-found .rooomy i{
+   float: right;
+    font-size: 10px;
+    color: gold;
+    margin-right: 5px;
+ }
+
+.rooms-found .rooomy p{
+    font-size: 13px;
+    margin-top: 0;
+    color: white;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+.rooms-found .rooomy .divider{
+    height: 1px;
+    width: 330px;
+    background-color: white;
+    margin: auto;
+}
+
+.rooms-found .rooomy .butt{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 10px;
+    
+}
+
+
+.rooms-found .rooomy button{
+    float: right;
+    height: 30px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color:rgb(117, 84, 17);
+    color: white;
+    text-transform: capitalize;
+}
+
+.rooms-found .rooomy button:hover{
+    background-color: black;
+    border: 1px solid white;
+}
+
+.rooms-found .rooomy .king{
+margin-top: -8px;
+}
+ 
+
+.room-categories{
+    height: 62.5rem;
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 0;
+     background: linear-gradient(
+        250deg,
+        rgb(5,8,20,0.98) 50%,
+        rgb(5,8,20,0.98) 70%,
+        rgb(5,8,20,1) 100%
+    );
+}
+
+.room-categories .categories{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: auto;
+    padding: 0;
+     overflow: hidden;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    
+    
+}
+
+.room-categories .categories h3{
+    color: rgb(255, 255, 255);
+
+}
+
+.room-categories .categories button{
+    width: 280px;
+    height: 30px;
+    background-color: rgb(117, 84, 17);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    font-size: 15px;
+}
+
+.room-categories .categories ul{
+    color: rgb(255, 255, 255);
+    
+}
+
+.room-categories .categories li{
+    padding: 10px;
+    font-size: 20px;
+   
+}
+ 
+
+.rooms-found .rooomy img{
+    height: 300px;
+   
+}
+
+.room-categories .capacity{
+    width: 300px;
+    margin: auto;
+     text-align: left;
+     padding: 0;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.room-categories .capacity h3{
+    font-size: 20px;
+}
+
+.room-categories .capacity label{
+    font-size: 20px;
+}
+
+ .room-categories .capacity .checkbox{
+  margin-bottom: 20px;
+}
+
+.room-categories .checkbox input{
+  color: black;
+    font-size: 20px
+ }
+
+.room-categories .result-goal{
+    height: 250px;
+    width: 200px;
+    background-color: rgb(48, 32, 0);
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+
+.room-categories .result-goal button{
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    background-color:rgb(252, 252, 252) ;
+    color: rgb(0, 0, 0);
+    border: none;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(0,0,0);
+    border-top: 2px solid rgba(255, 255, 255,0.1 );
+    gap: 60px;
+    width: 100%;
+}
+
+.footer .grand-palace{
+    color: white;
+  
+}
+
+.footer .grand-palace h2{
+    color: rgba(200,169,106);
+}
+
+.footer .grand-palace .all{
+    display: flex;
+    gap: 10px;
+}
+
+.footer .grand-palace .all .terms{
+    color: rgb(180, 179, 179);
+}
+
+.footer .grand-palace .divider{
+    height: 20px;
+    width: 1px;
+    background-color:rgb(180, 179, 179);
+    margin-top: 15px;
+}
+
+.footer .grand-palace p{
+     margin: 8px;
+    text-transform: capitalize;
+}
+
+.footer .quick-link{
+ color: rgba(200,169,106); 
+   width: 200px;
+    
+}
+
+ .footer .quick-link ul{
+    padding: 0;
+    margin: 0;
+ }
+
+.footer .quick-link li{
+    list-style-type: none; 
+     margin-bottom: 8px;
+}
+
+.footer .quick-link a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.footer .quick-link a:hover{
+    color: rgba(200,169,106) ;
+    transition: 0.2s;
+}
+
+.footer .support{
+    color:rgba(200,169,106);
+     width: 200px;
+       
+}
+
+.footer .support ul{
+    padding: 0px;
+    margin: 0;
+}
+
+.footer .support li{
+    list-style-type: none;
+     margin-bottom: 8px;
+}
+
+.footer .support a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+      
+}
+
+.footer .support a:hover{
+    color: rgba(200,169,106) ;
+    transition: 0.2s;
+}
+
+.footer .follow-us{
+    color: white;
+}
+
+.footer .follow-us i{
+    color: rgba(200,169,106);
+    font-size: 25px;
+    padding: 10px;
+    background:rgba(255,255,255,0.1);
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+ .newsletter{
+    padding: 15px;
+    background: black; 
+    justify-content: center;
+    display: flex;
+  
+}
+
+ .newsletter label{
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+    padding: 10px;
+}
+
+ .newsletter input{
+   height: 29px;
+background-color: black;
+border: 2px solid rgba(200,169,106);
+color: white;
+outline: none;
+width: 200px;
+}
+
+ .newsletter button{
+    height: 35px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgba(200,169,106);
+    color: white;
+    border: none;
+   
+}
+ 
